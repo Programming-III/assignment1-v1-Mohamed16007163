@@ -1,19 +1,13 @@
-#ifndef MAMMAL_H
-#define MAMMAL_H
-
+#ifndef Mammel_h
+#define Mammel_h
 #include "Animal.h"
-
-//define mammal class here
-
-
-class Mammel: public Animel{
+#include <iostream>
+using namespace std;
+class Mammel: public Animal{
     private:
     string furColor;
     Mammel(string furColor, string name, int age, bool isHung);
     void display();
 };
-
-
-
 
 #endif
