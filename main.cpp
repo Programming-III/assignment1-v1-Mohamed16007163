@@ -1,12 +1,11 @@
 #include "Animal.h"
+#include "Mammel.h"
 #include "Bird.h"
-#include "Mammal.h"
 #include "Reptile.h"
 #include "Enclosure.h"
 #include "Visitor.h"
 #include <iostream>
 using namespace std;
-
 Animal::Animal(string name, int age, bool isHung){
     this->name=name;
     this->age=age;
@@ -14,7 +13,7 @@ Animal::Animal(string name, int age, bool isHung){
 }
 void Animal::feed(){
     if(isHung==true){
-        Cout<< "Hungry"<< endl;
+        cout<< "Hungry"<< endl;
     }
     cout<< "Not Hungry"<<endl;
 }
@@ -37,15 +36,15 @@ void Mammel:: display(){
 Bird::Bird(float WingSpan, string name, int age, bool isHung): Animal(name, age, isHung){
     this->WingSpan=WingSpan;
 }
-void Bird:: diplay(){
-    Animal::display():
+void Bird:: display(){
+    Animal::display();
     cout<< "the WingSpan is: "<< WingSpan<< endl;
 }
 Reptile::Reptile(bool isVenomus, string name, int age, bool isHung): Animal(name, age, isHung){
     isVenomus=isVenomus;
 }
 
-void Reptile::diplay(){
+void Reptile::display(){
     Animal::display();
     cout<< " this Reptile is: " <<isVenomus<< endl ;
 }
