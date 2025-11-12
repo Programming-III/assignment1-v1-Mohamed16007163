@@ -1,14 +1,13 @@
-#ifndef ANIMAL_H
-#define ANIMAL_H
-
-#include <string>
+#ifndef Animal_h
+#define Animal_h
+#include <iostream>
 using namespace std;
 
 class Animal{
     private:
     string name;
     int age;
-    bool isHung
+    bool isHung;
     public:
     Animal(string name, int age, bool isHung);
     void display();
@@ -16,7 +15,4 @@ class Animal{
     
     
 };
-
-
-
 #endif
