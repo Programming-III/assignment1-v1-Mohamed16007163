@@ -4,7 +4,18 @@
 #include <string>
 using namespace std;
 
-//define animal class here 
+class Animal{
+    private:
+    string name;
+    int age;
+    bool isHung
+    public:
+    Animal(string name, int age, bool isHung);
+    void display();
+    void feed();
+    
+    
+};
 
 
 
