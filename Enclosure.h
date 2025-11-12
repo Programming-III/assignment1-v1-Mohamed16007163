@@ -1,13 +1,12 @@
-#ifndef ENCLOSURE_H
-#define ENCLOSURE_H
+#ifndef Enclosure_h
+#define Enclosure_h
 
-#include "Animal.h"
 
-//define enclosure class here 
-
+#include <iostream>
+using namespace std;
 class Enclosure{
     private:
-    Animal *[] Animal;
+    Animal * Animal ;
     int capacity;
     int CurrentCount;
     public:
@@ -19,10 +18,5 @@ class Enclosure{
     int getCurrentCount(int count);
     
     
-
-
-
-
-
-
+};
 #endif
